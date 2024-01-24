@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    input[value=hello]{
+      width: 200px;
+      color: blue;
+    }
+    input[type=password]{
+      color:red;
+      width: 100px;
+    }
+    input[disabled]{
+      opacity: 0.2;
+
+    }
+   
+    button[class^=btn-]{
+      font-weight: bold;
+      border-radius: 20px;
+
+      /*  ^= 를 사용함으로써 btn-으로 시작하는 모든 단어를
+       가져오는 것이다. */
+    }
+    button[class$=success]{
+      background-color: green;
+
+      /* $= 를 사용함으로써 success로 끝나는 모든 단어를
+      가져오는 것이다. */
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+</body>
+
+<input type="text" value="hello">
+<input type="password" value="1234">
+<input type="text" value="disabled-text" disabled>
+<button class="btn-success">success</button>
+<button class="btn-danger">btn-danger</button>
+
+
+
+</html>
